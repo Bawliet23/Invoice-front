@@ -1,0 +1,45 @@
+
+<body>
+
+<mat-sidenav-container>
+
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+
+    <button
+    mat-icon-button
+    *ngIf="sidenav.mode === 'over'"
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
+
+    <!-- img place -->
+
+    <h4 class="name">user name</h4>
+    <p class="designation">user info</p>
+
+    <mat-divider></mat-divider>
+    <a mat-button routerLink="products">Product</a><br>
+
+
+    <a mat-button routerLink="history">history</a>
+
+
+    <mat-divider></mat-divider>
+
+
+  </mat-sidenav>
+  <!-- <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+
+    </div>
+  </mat-sidenav-content> -->
+</mat-sidenav-container>
+
+
+
+
+  <router-outlet></router-outlet>
+
+</body>

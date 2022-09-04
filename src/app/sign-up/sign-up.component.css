@@ -1,0 +1,45 @@
+.container_1 {
+    display: flex;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../assets/img/body_img.jpg);
+}
+
+.container_2 {
+    max-width: 650px;
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, .4);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* .div1 {
+    text-align: center;
+    letter-spacing: 2px;
+    
+    width: 50%;
+    float: left;
+} */
+
+.form-container {
+    max-width: 650px;
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, .4);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+

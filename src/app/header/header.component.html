@@ -1,0 +1,28 @@
+<!-- [ngClass]="{'navbar-fixed':isFixedNavbar}" -->
+ <mat-toolbar *ngIf="!this.authService.user" color="primary" class="mat-elevation-z4">
+    <span>BILLS</span>
+
+
+    <div class="spacer"></div>
+
+    <a mat-button routerLink="">Home</a>
+    <a mat-button routerLink="sign-up" color="accent">Sign up</a>
+    <a mat-raised-button color="accent" routerLink="login">Log In</a>
+</mat-toolbar> 
+<!-- 
+navbar when the user is logged  -->
+
+ <mat-toolbar *ngIf="this.authService.user" color="primary" class="mat-elevation-z4">
+  <span>BILLS</span>
+
+
+  <div class="spacer"></div>
+
+  <a mat-button routerLink="">Home</a>
+  <a mat-button routerLink="invoice">Invoice</a>
+  <a mat-button routerLink="sign-up" color="accent"><span class="material-icons">person</span>{{this.authService.user.name}}</a>
+  <!-- <a mat-button color="red" routerLink="login">Log Out</a> -->
+</mat-toolbar> 
+
+
+
