@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 // import { FormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
+
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -17,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { InvoiceComponent } from './invoice/invoice.component';
+
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -37,6 +41,7 @@ import { UserComponent } from './user/user.component';
 import { ProductsComponent } from './products/products.component';
 import { HistoryComponent } from './history/history.component';
 import { JwtInterceptor } from './Interceptors/JwtInterceptor';
+import { DialogComponent } from './dialog/dialog.component';
 
 
 
@@ -53,7 +58,8 @@ import { JwtInterceptor } from './Interceptors/JwtInterceptor';
     LoginComponent,
     UserComponent,
     ProductsComponent,
-    HistoryComponent
+    HistoryComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -76,6 +82,8 @@ import { JwtInterceptor } from './Interceptors/JwtInterceptor';
     // DynamicFormBuilderModule,
     HttpClientModule,
     MatSelectModule,
+    MatPaginatorModule,
+    MatSortModule,
 
   ],
   providers: [

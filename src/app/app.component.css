@@ -33,32 +33,7 @@
   width: 100%;
 }
 
-/* .invoiceContainer {
-    text-align: center;
 
-
-}
-input[type="file"]{
-    display: none;
-
-}
-lable {
-    color: black;
-    height: 60px;
-    width: 250px;
-    background-color: lightskyblue;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-} */
 .div1 {
     text-align: center;
     letter-spacing: 2px;
@@ -67,14 +42,7 @@ lable {
     float: left;
 }
 
-/* .div2 {
-    width: 50%;
-    float: right;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../../assets/img/contactImg.jpg);
-} */
+
 
 .container-ab {
   height: 100vh;
@@ -88,42 +56,6 @@ lable {
 
 
 }
-
-/* .container-ab div{
-  align-items: center;
-  width: 100%;
-  /* justify-content: center; */
-  /* background-color: aqua;
-  margin: 20px;
-} */
-/* .d1 {
-  display: flex;
-  border-style: dashed;
-  border-color: black;
-  height: 300px;
-  width: 300px;
-  margin-left: 40px;
-}
-
-.d2 {
-  display: flex;
-  align-items: center;
-  border-style: dashed;
-  border-color: black;
-  height: 300px;
-  width: 300px;
-  margin-left: 40px;
-}
-
-.d3 {
-  display: flex;
-  align-items: center;
-  border-style: dashed;
-  border-color: black;
-  height: 300px;
-  width: 300px;
-  margin-left: 40px;
-} */
 
 .container-ab {
   margin-top: 0;

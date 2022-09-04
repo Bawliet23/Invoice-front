@@ -13,16 +13,16 @@ import { AuthGuard } from './services/auth-guard.service';
 
 
 // const redirectToLogin = () => redirectUnauthorizedTo(['login']);
-
+//
 
 const routes: Routes = [
   {path: '',component: HomeComponent, pathMatch: 'full'},
-  {path: 'invoice', component: InvoiceComponent, canActivate: [AuthGuard] },
-  {path: 'user', component: UserComponent,
+  {path: 'invoice', component: InvoiceComponent,canActivate: [AuthGuard]},
+  {path: 'user', component: UserComponent,redirectTo: 'products',canActivate: [AuthGuard],
       children: [
         {path: 'products', component: ProductsComponent},
         {path: 'history', component: HistoryComponent},
-       ], canActivate: [AuthGuard], 
+       ]
     },
     // {path: 'products', component: ProductsComponent},
     // {path: 'history', component: HistoryComponent},

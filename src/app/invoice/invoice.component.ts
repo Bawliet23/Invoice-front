@@ -162,7 +162,7 @@ export class InvoiceComponent implements OnInit {
   sold(): number{
     const Tax = (this.somme)*(this.tx/100);
     const Redux = (this.somme)*(this.redx/100);
-    let solution = Tax - Redux + this.livr + (this.somme);
+    let solution:number = (this.somme) - Redux  + Tax  + (this.livr);
 
     return solution;
   }
