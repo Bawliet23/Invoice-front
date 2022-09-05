@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-
+import {Component, OnInit, ViewChild} from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { AuthService } from '../services/auth.service';
+import {delay, filter} from "rxjs/operators";
+import {NavigationEnd, Router} from "@angular/router";
+
+
 
 @Component({
   selector: 'app-header',
@@ -14,19 +17,17 @@ export class HeaderComponent implements OnInit {
 
   // LoginStatus$!: new () => BehaviorSubject<boolean>(null);
 
+  ngOnInit() {
+  }
 
 
-  constructor(protected authService : AuthService,) { 
+
+  constructor(protected authService: AuthService) {
 
   }
 
-  ngOnInit(): void {
-  }
-
-  toggleNavbar(): void {
+    toggleNavbar() : void {}
 
   }
-
-}
 
 

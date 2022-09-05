@@ -1,1 +1,15 @@
-<p>history works!</p>
+<div class="container">
+  <mat-list>
+    <div mat-subheader>Old Invoices :</div>
+    <mat-list-item *ngFor="let folder of folders">
+      <mat-icon mat-list-icon>folder</mat-icon>
+      <div mat-line>{{folder.name}}</div>
+      <div mat-line> {{folder.updated | date}} </div>
+    </mat-list-item>
+  </mat-list>
+  <div class="btn">
+    <button mat-raised-button color="warn">Download</button>
+    <button mat-raised-button color="accent" routerLink="products">Add A New Product</button>
+    <button mat-raised-button color="accent" routerLink="invoice">Fill a new invoice</button>
+  </div>
+</div>
